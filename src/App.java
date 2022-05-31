@@ -1,9 +1,10 @@
 import exercicios.exercicio01;
+import exercicios.exercicio02;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        exercicio01 ex = new exercicio01();
+        exercicio02 ex = new exercicio02();
 
-        ex.ex13();
+        ex.ex16();
     }
 }
