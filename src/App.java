@@ -5,6 +5,6 @@ public class App {
     public static void main(String[] args) throws Exception {
         exercicio02 ex = new exercicio02();
 
-        ex.ex16();
+        ex.ex18();
     }
 }

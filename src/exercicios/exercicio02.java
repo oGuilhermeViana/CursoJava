@@ -409,9 +409,10 @@ public class exercicio02 {
 
             if(delta < 0) {
                 System.out.println("A equação não possui raizes reais");
-            } else if (delta == 1) {
+            } else if (delta == 0) {
                 double x = (-b + Math.sqrt(delta)) / 2 * a;
 
+                System.out.println("Delta: " + delta);
                 System.out.println("Só possui uma raiz");
                 System.out.println("X = " + x);
             } else {
@@ -419,6 +420,7 @@ public class exercicio02 {
 
                 double x2 = (-b - Math.sqrt(delta)) / 2 * a;
 
+                System.out.println("Delta: " + delta);
                 System.out.println("Possui 2 raiz");
                 System.out.println("X1: " + x1);
                 System.out.println("X2: " + x2);
@@ -430,6 +432,27 @@ public class exercicio02 {
 
     }
 
+    public void ex17 () {
+        System.out.println("Digite um ano");
+        int ano = scan.nextInt();
 
+        if ((ano % 400 == 0 || (ano % 4 == 0 && ano % 100 != 0))) {
+            System.out.println("É bissexto");
+        } else {
+            System.out.println("Não é bissexto");
+        }
+
+    }
+
+    public void ex18 () {
+        System.out.println("Digite um número inteiro: ");
+        int num = scan.nextInt();
+
+        if (num % 2 == 0) {
+            System.out.println("O número é par");
+        } else {
+            System.out.println("O número é impar");
+        }
+    }
 
 }
